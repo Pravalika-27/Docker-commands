@@ -1,0 +1,121 @@
+Here’s a list of 25 commonly used Docker commands along with their descriptions:
+
+docker --version:
+Displays the installed Docker version.
+
+docker pull <image>:
+Downloads a Docker image from a registry (usually Docker Hub).
+
+docker run <image>:
+Runs a container based on the specified image.
+
+docker ps:
+Lists all running containers.
+
+docker ps -a:
+Lists all containers, including stopped ones.
+
+docker images:
+Lists all downloaded Docker images.
+
+docker build <path>:
+Builds a Docker image from a Dockerfile located in the specified path.
+
+docker stop <container_id>:
+Stops a running container.
+
+docker start <container_id>:
+Starts a stopped container.
+
+docker rm <container_id>:
+Removes a stopped container.
+
+docker rmi <image_id>:
+Removes a Docker image.
+
+docker exec -it <container_id> <command>:
+Executes a command inside a running container (e.g., bash for a terminal).
+
+docker logs <container_id>:
+Displays the logs from a running or stopped container.
+
+docker inspect <container_id>:
+Shows detailed information about a container or image, such as configuration and networking.
+
+docker commit <container_id> <new_image_name>:
+Creates a new image from a container's current state.
+
+docker network ls:
+Lists all Docker networks.
+
+docker network create <network_name>:
+Creates a new Docker network.
+
+docker network connect <network_name> <container_id>:
+Connects a container to a specific network.
+
+docker volume ls:
+Lists all Docker volumes.
+
+docker volume create <volume_name>:
+Creates a new Docker volume.
+
+docker-compose up:
+Starts containers defined in a docker-compose.yml file.
+
+docker-compose down:
+Stops and removes containers, networks, and volumes created by docker-compose up.
+
+docker tag <image> <repository:tag>:
+Tags a local image with a new name and tag.
+
+docker push <repository:tag>:
+Pushes an image to a Docker registry.
+
+docker container prune:
+Removes all stopped containers.
+
+docker restart <container_id>:
+Restarts a running or stopped container.
+
+docker stats:
+Displays real-time statistics (CPU, memory, I/O usage) of running containers.
+
+docker top <container_id>:
+Shows the running processes inside a container.
+
+docker diff <container_id>:
+Shows the changes made to the filesystem of a container.
+
+docker history <image>:
+Displays the history of a Docker image (all the layers and their corresponding commands).
+
+docker attach <container_id>:
+Attaches to a running container, allowing you to interact with its terminal.
+
+docker cp <container_id>:<path_inside_container> <path_on_host>:
+Copies files or directories from a container to the host or vice versa.
+
+docker export <container_id> > <filename.tar>:
+Exports the filesystem of a container as a tar archive.
+
+docker import <filename.tar>:
+Imports a tarball to create a Docker image.
+
+docker login:
+Logs into a Docker registry (e.g., Docker Hub) from the command line.
+
+docker logout:
+Logs out from a Docker registry.
+
+docker save -o <filename.tar> <image>:
+Saves a Docker image as a tar archive file.
+
+docker load -i <filename.tar>:
+Loads a Docker image from a tar archive file.
+
+docker rename <old_name> <new_name>:
+Renames a container.
+
+docker system df:
+Displays disk usage for Docker (images, containers, volumes, etc.).
